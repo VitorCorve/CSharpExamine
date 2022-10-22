@@ -1,0 +1,25 @@
+﻿<Window x:Class="CSharpExamine.Views.ConfirmActionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpExamine.Views"
+        mc:Ignorable="d"
+        Title="ConfirmActionWindow" Height="150" Width="350"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock x:Name="Message" 
+                   Text="Message"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextWrapping="WrapWithOverflow"/>
+            <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Center"
+                        Margin="0,40,0,0">
+                <Button Content="Yes" Height="20" Width="60" Click="ClickYes"/>
+                <Button Content="No" Margin="10,0,0,0" Height="20" Width="60" Click="ClickNo"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
